@@ -1,3 +1,5 @@
+import TypingEffect from "@/components/shared/text/TypingEffect";
+
 export default function HomePage() {
   const codeContent = `<hello>
 {
@@ -31,7 +33,7 @@ export default function HomePage() {
         </h1>
         <h2 className="text-3xl md:text-5xl mb-4 text-white">//I HELP YOU</h2>
         <h3 className="text-4xl md:text-6xl font-bold text-purple-400">
-          BEAUTIFULLY
+          <TypingEffect words={["BUILD", "DESIGN", "TEST", "DEPLOY"]} />
         </h3>
       </div>
     </div>
