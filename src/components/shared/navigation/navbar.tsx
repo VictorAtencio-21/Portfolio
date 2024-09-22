@@ -21,7 +21,7 @@ export default function Navbar() {
           <div className="w-4 h-4 rounded-full bg-yellow-500"></div>
           <div className="w-4 h-4 rounded-full bg-green-500"></div>
         </div>
-        <div className="border-t-2 border-[#0a0a0a]">
+        <div className="border-t-2 border-b-2 border-[#0a0a0a]">
           <ul className="flex flex-wrap -mt-px text-sm">
             {navItems.map((item) => (
               <li key={item.name}>

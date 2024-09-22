@@ -4,7 +4,7 @@ export default function HomePage() {
   const codeContent = `<hello>
 {
   Hello, my name is Victor()
-  I am a full-stack web-developer
+  I am a front end web-developer
 }
 </hello>`;
 

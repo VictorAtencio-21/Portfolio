@@ -10,9 +10,9 @@ interface TypingEffectProps {
 
 const TypingEffect = ({
   words,
-  typingSpeed = 150,
-  deletingSpeed = 100,
-  delayBetweenWords = 2000,
+  typingSpeed = 250, // Default typing speed (ms)
+  deletingSpeed = 250, // Default deleting speed (ms)
+  delayBetweenWords = 1000, // Default delay between words (ms)
 }: TypingEffectProps) => {
   const { displayedText, showCursor } = useTypingEffect({
     words,
