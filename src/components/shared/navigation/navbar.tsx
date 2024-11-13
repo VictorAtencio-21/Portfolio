@@ -14,33 +14,31 @@ export default function Navbar() {
   const [active, setActive] = useState("_hello");
 
   return (
-    <nav className="sticky top-0 z-10 bg-gray-900 text-gray-400 pt-4">
-      <div className="mx-auto">
-        <div className="flex items-center space-x-2 mb-4 px-5">
-          <div className="w-4 h-4 rounded-full bg-[#ff6b6b]"></div>
-          <div className="w-4 h-4 rounded-full bg-yellow-500"></div>
-          <div className="w-4 h-4 rounded-full bg-green-500"></div>
-        </div>
-        <div className="border-t-2 border-b-2 border-[#0a0a0a]">
-          <ul className="flex flex-wrap -mt-px text-sm">
-            {navItems.map((item) => (
-              <li key={item.name}>
-                <Link href={item.href}>
-                  <span
-                    className={`text-md inline-block py-3 px-8 lg:px-16  border-r-2 border-black cursor-pointer ${
-                      active === item.name
-                        ? "text-[#f0b65a] border-t border-t-[#ff6b6b]"
-                        : "border-t border-black"
-                    }`}
-                    onClick={() => setActive(item.name)}
-                  >
-                    {item.name}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+    <nav className="fixed top-0 left-0 z-50 w-full bg-gray-900 text-gray-400">
+      <div className="flex items-center space-x-2 p-5">
+        <div className="w-4 h-4 rounded-full bg-[#ff6b6b]"></div>
+        <div className="w-4 h-4 rounded-full bg-yellow-500"></div>
+        <div className="w-4 h-4 rounded-full bg-green-500"></div>
+      </div>
+      <div className="border-t-2 border-b-2 border-[#0a0a0a]">
+        <ul className="flex flex-wrap -mt-px text-sm">
+          {navItems.map((item) => (
+            <li key={item.name}>
+              <Link href={item.href}>
+                <span
+                  className={`text-md inline-block py-3 px-8 lg:px-16  border-r-2 border-black cursor-pointer ${
+                    active === item.name
+                      ? "text-[#f0b65a] border-t border-t-[#ff6b6b]"
+                      : "border-t border-black"
+                  }`}
+                  onClick={() => setActive(item.name)}
+                >
+                  {item.name}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );

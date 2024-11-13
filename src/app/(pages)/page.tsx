@@ -2,10 +2,8 @@ import TypingEffect from "@/components/shared/text/TypingEffect";
 
 export default function HomePage() {
   const codeContent = `<hello>
-{
-  Hello, my name is Victor()
-  I am a front end web-developer
-}
+    Hello, my name is {Victor()}
+    I am a front end web-developer
 </hello>`;
 
   return (
