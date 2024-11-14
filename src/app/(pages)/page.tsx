@@ -2,7 +2,7 @@ import TypingEffect from "@/components/shared/text/TypingEffect";
 
 export default function HomePage() {
   const codeContent = `<hello>
-    Hello, my name is {Victor()}
+    Hello, my name is <span>Victor</span>
     I am a front end web-developer
 </hello>`;
 
@@ -31,7 +31,9 @@ export default function HomePage() {
         </h1>
         <h2 className="text-3xl md:text-5xl mb-4 text-white">//I HELP YOU</h2>
         <h3 className="text-4xl md:text-6xl font-bold text-purple-400">
-          <TypingEffect words={["BUILD", "DESIGN", "TEST", "DEPLOY"]} />
+          <TypingEffect
+            words={["QUICKLY", "EFFICIENTLY", "EFFECTIVELY", "BEAUTIFULLY"]}
+          />
         </h3>
       </div>
     </div>

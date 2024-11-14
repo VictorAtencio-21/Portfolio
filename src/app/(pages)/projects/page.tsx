@@ -1,10 +1,9 @@
-async function page() {
+export default function ProjectsPage() {
   return (
-    <div>
-      <h1>Projects</h1>
-      <p>These are some of the projects I've been involved into</p>
+    <div className="min-h-screen bg-gray-900 text-gray-300 p-8 flex flex-col items-center justify-center">
+      <h1 className="text-xl md:text-8xl font-mono text-green-400 mb-8">
+        //PROJECTS
+      </h1>
     </div>
   );
 }
-
-export default page;
