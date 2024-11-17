@@ -7,7 +7,7 @@ export default function HomePage() {
 </hello>`;
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-300 flex flex-col md:flex-row items-center justify-center">
+    <div className="min-h-screen text-gray-300 flex flex-col md:flex-row items-center justify-center">
       <div className="w-full md:w-1/2 flex justify-center">
         <pre className="font-mono text-lg md:text-2xl relative">
           <code className="block p-6 overflow-x-auto">
